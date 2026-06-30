@@ -28,7 +28,7 @@ default and safe by construction.*
 This repo is a Claude Code **plugin marketplace**. From inside Claude Code:
 
 ```
-/plugin marketplace add <your-github-username>/plugin-mobile-app-workflow
+/plugin marketplace add pf2707/agentic_plugin_mobile_workflow
 /plugin install shinhana-mobile-agent-kit@shinhana-marketplace
 ```
 
@@ -46,7 +46,7 @@ and their subagents become available in any mobile repo.
 ## How it works
 
 ```
-plugin-mobile-app-workflow/
+agentic_plugin_mobile_workflow/
 ├── .claude-plugin/
 │   ├── plugin.json          # plugin manifest (name, version, author)
 │   └── marketplace.json     # marketplace manifest → makes this repo installable
@@ -85,4 +85,4 @@ matrix, and the definition-of-done that gates each agent.
 
 ## License
 
-[MIT](LICENSE) © YOUR_NAME_HERE
+[MIT](LICENSE) © Thai Tran
