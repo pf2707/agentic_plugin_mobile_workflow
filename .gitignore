@@ -1,0 +1,11 @@
+# Local, machine-specific Claude Code state — never publish
+.claude/settings.local.json
+
+# Agent output (generated at runtime by the plugin's agents)
+reports/
+
+# OS / editor noise
+.DS_Store
+*.swp
+.idea/
+.vscode/

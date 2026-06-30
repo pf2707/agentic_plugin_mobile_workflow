@@ -1,0 +1,21 @@
+{
+  "name": "shinhana-mobile-agent-kit",
+  "description": "Test generation, crash triage, code review and release automation for mobile apps",
+  "version": "0.1.3",
+  "author": {
+    "name": "YOUR_NAME_HERE",
+    "email": "pf2707@gmail.com"
+  },
+  "keywords": [
+    "mobile",
+    "ios",
+    "android",
+    "flutter",
+    "react-native",
+    "testing",
+    "code-review",
+    "crash-triage",
+    "release-automation",
+    "agents"
+  ]
+}
