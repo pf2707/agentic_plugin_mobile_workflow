@@ -29,7 +29,6 @@ This repo is a Claude Code **plugin marketplace**. From inside Claude Code:
 
 ```
 /plugin marketplace add pf2707/agentic_plugin_mobile_workflow
-/plugin install shinhana-mobile-agent-kit@shinhana-marketplace
 ```
 
 Then the slash commands (`/write-tests`, `/review-code`, `/triage-crash`, `/release-app`)
