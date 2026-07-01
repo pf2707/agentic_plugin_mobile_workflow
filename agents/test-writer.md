@@ -68,8 +68,12 @@ Run the suite with the platform's command:
 
 Fix failures and re-run until green.
 
-## Step 6 — Report
+## Step 6 — Report (required — do NOT skip)
+The task is **not complete** until `reports/write-test.md` exists. This is enforced by a
+`SubagentStop` hook: if the file is missing you will be blocked from finishing and told
+to write it. Write it **before** you end your turn.
+
 Write a **coverage summary** to `reports/write-test.md` (create the `reports/` folder
-if missing): the platform detected, files/tests added, the suite command and its
-pass/fail result, and what was covered, what was not, and why. Also surface this
+if missing): the platform detected, files/tests added, the **exact** suite command and
+its pass/fail result, and what was covered, what was not, and why. Also surface this
 summary in your reply.

@@ -76,6 +76,10 @@ agentic_plugin_mobile_workflow/
   it; a pasted trace works just as well.
 - **Auditable output.** Every run writes a structured report under `reports/` and surfaces a
   summary inline, so results are reviewable, not ephemeral.
+- **Enforced, not just requested.** A prompt instruction to "write a report" is one the model
+  can silently skip. A `SubagentStop` hook (`hooks/ensure-test-report.sh`) blocks the Test
+  Agent from finishing until `reports/write-test.md` actually exists — turning a hoped-for
+  step into a guaranteed one. Fails open if `jq` is missing so it never breaks a run.
 
 See [`docs/plan.md`](docs/plan.md) for the full design doc — per-agent goals, the framework
 matrix, and the definition-of-done that gates each agent.
