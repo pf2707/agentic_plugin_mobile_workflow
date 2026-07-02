@@ -2,7 +2,6 @@
 name: triage-crash
 description: Triage a mobile crash or stack trace (Crashlytics, Sentry, Xcode .crash, Android logcat/ANR, Flutter or React Native stack). Detects the platform, finds root cause and offending file:line, assesses severity, and recommends a fix. Diagnoses only unless asked to fix.
 context: fork
-agent: Explore
 allowed-tools: Read, Grep, Glob, Bash, Write, mcp__sentry
 ---
 

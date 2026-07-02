@@ -11,14 +11,17 @@
 #   - exit 2 : blocks the subagent from stopping; stderr is fed back to the agent
 #   - exit 0 : allow the subagent to stop
 #
-# DEBUG: every invocation appends one line to
+# DEBUG (opt-in): set MOBILE_KIT_HOOK_DEBUG=1 to append one line per invocation to
 #   "${TMPDIR:-/tmp}/mobile-agent-kit-hook.log"
 # showing what the hook received and what it decided. Inspect it with:
 #   cat "${TMPDIR:-/tmp}/mobile-agent-kit-hook.log"
-# (This log is temporary diagnostic aid; safe to delete.)
+# Off by default so the shipped plugin stays quiet.
 set -uo pipefail
 
-log() { printf '%s %s\n' "$(date +%H:%M:%S)" "$*" >>"${TMPDIR:-/tmp}/mobile-agent-kit-hook.log"; }
+log() {
+  [ -n "${MOBILE_KIT_HOOK_DEBUG:-}" ] || return 0
+  printf '%s %s\n' "$(date +%H:%M:%S)" "$*" >>"${TMPDIR:-/tmp}/mobile-agent-kit-hook.log"
+}
 
 input=$(cat)
 
