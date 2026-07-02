@@ -1,7 +1,7 @@
 {
   "name": "shinhana-mobile-agent-kit",
   "description": "Test generation, crash triage, code review and release automation for mobile apps",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Thai Tran",
     "email": "pf2707@gmail.com"
